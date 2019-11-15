@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAsB,EACvB;;AAED;EACE,uDAAsD,EACvD","file":"style.css","sourcesContent":["* {\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open Sans', Arial, Helvetica, sans-serif;\r\n}"]}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend / Empty project</title>
+    <meta name="description" content="Frontend 2019" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- figure: doplňující obsah stránky – obrázek, video, ukázka kódu -->
+    <figure>
+      <!-- picture: Umožňuje vložit jeden obrázek pomocí více různých formátů nebo
+      velikostí -->
+      <picture>
+        <source srcset="assets/image-640.webp" type="image/webp" />
+        <source srcset="assets/image-640.jpg" media="(max-width: 992px)" />
+        <img
+          src="assets/image-1200.jpg"
+          alt="My photo"
+          width="600"
+          height="225"
+        />
+      </picture>
+      <!-- figcaption: popisek doplňujícího obsahu, je uvnitř figure -->
+      <figcaption>© Getty Images Europe</figcaption>
+    </figure>
+
+    <!-- video: vložení videoobsahu do stránky -->
+    <video controls width="250">
+      <source src="//interactive-examples.mdn.mozilla.net/media/examples/flower.webm" type="video/webm">
+      <source src="//interactive-examples.mdn.mozilla.net/media/examples/flower.mp4"  type="video/mp4">
+      Video není bohužel podporováno.
+    </video>
+
+    <p><input type="search" /> search: vyhledávací pole, doplní se malý křížek pro jeho mazání</p>
+    <p><input type="email" /> Prohlížeč kontroluje formát emailu</p>
+    <p><input type="url" /> Zadání URL, kontroluje formát</p>
+    <p><input type="tel" /> Na mobilu nabídne číselnou klávesnici</p>
+    <p><input type="number" /> Na desktopu doplní šipky nahoru a dolů</p>
+    <p><input type="number" min="24" max="45" step="0.5" /></p>
+    <p><input type="range" min="1" max="100" value /> Zobrazí se jako slider</p>
+    <p><input type="date" min="2019-01-01" max="2022-01-01" /> Datepicker</p>
+    <p><input type="..." required /> Kontroluje se zda je něco vloženo</p>
+    <p><input placeholder="Search something..." /></p>
+  </body>
+</html>
