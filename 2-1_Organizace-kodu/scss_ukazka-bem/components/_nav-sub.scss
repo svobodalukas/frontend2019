@@ -1,0 +1,66 @@
+// # Subnavigation
+// - hidden by default
+
+.nav-sub {
+  display: none;
+  list-style-type: none;
+  padding: 0 0 0.5rem;
+  margin: 0;
+  font-family: $font-raleway;
+
+  .nav-sub {
+    .nav-sub__link {
+      font-size: 1.125rem;
+      padding: 1rem 2rem 1rem 4rem;
+    }
+
+    .nav-sub__link--active {
+      background-color: transparent;
+      text-decoration: underline;
+      color: $color-text-light;
+    }
+  }
+}
+
+.nav-sub__link {
+  display: flex;
+  color: $color-text-light;
+  fill: $color-text-light;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-top: 1px solid $color-gray-lighter;
+}
+
+.nav-sub__link--active {
+  background-color: transparent;
+  text-decoration: underline;
+  color: $color-text-light;
+}
+
+// Items with subnavigation
+.nav-sub__link--more-active {
+  @media #{$screen-mobile-max} {
+    background-color: darken($color-secondary-light, 15%);
+    color: $color-white;
+  }
+
+  .nav-sub__icon--more {
+    transform: rotate(180deg);
+    fill: $color-white;
+  }
+
+  + .nav-sub {
+    @media #{$screen-mobile-max} {
+      display: block;
+      background: darken($color-secondary-light, 2%);
+    }
+  }
+}
+
+.nav-sub__icon--more {
+  margin-left: auto;
+  align-self: center;
+  fill: $color-text-light;
+}

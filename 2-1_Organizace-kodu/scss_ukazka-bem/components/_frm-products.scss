@@ -1,0 +1,65 @@
+// # Search product form
+
+.frm-products {
+  background: $color-secondary-soft;
+  padding: 1.5rem 0 1rem;
+  margin: 0 0 -.875rem;
+
+  @media #{$screen-sm} {
+    padding: 3rem 0;
+  }
+
+  .container {
+    @media #{$screen-xs} {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media #{$screen-sm} {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .frm-row {
+    margin: 0 0 1.5rem;
+
+    @media #{$screen-xs} {
+      flex: 1 1 50%;
+      max-width: 50%;
+      padding: 0 .5rem;
+    }
+
+    @media #{$screen-sm} {
+      flex: 1;
+      flex-grow: 1.5;
+      padding: 0 1rem;
+      margin: 0;
+
+      &:first-child {
+        padding: 0 1rem 0 0;
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.frm-products__send {
+  display: flex;
+  padding: 0 0 1rem;
+  flex-grow: 0;
+
+  @media #{$screen-sm} {
+    padding: 0 0 .5rem 1rem;
+  }
+
+  .btn {
+    width: 100%;
+
+    @media #{$screen-sm} {
+      width: auto;
+    }
+
+    @media #{$screen-sm} {
+      align-self: flex-end;
+    }
+  }
+}

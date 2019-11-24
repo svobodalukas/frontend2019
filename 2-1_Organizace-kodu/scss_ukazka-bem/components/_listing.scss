@@ -1,0 +1,38 @@
+// # News pagination - number of items per page
+
+.listing {
+  font-weight: $font-semibold;
+  color: $color-text-light;
+  display: flex;
+}
+
+.listing__label {
+  align-self: center;
+  margin: 0 .5rem 0 0;
+
+  @media #{$screen-md} {
+    margin: 0 1.5rem 0 0;
+  }
+}
+
+.listing__list-wrap {
+  padding: 0;
+  background: $color-white url('../images/ico-rozbal.svg') no-repeat
+    80% 50%;
+  background-size: 0.875rem 0.875rem;
+  border: 1px solid $color-gray-lighter;
+  border-radius: 1.3rem;
+  height: 2.6rem;
+  align-self: center;
+}
+
+.listing__list {
+  border: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+  padding: 0 2.5rem 0 1.5rem;
+  height: 2.6rem;
+  font-weight: $font-regular;
+}

@@ -1,0 +1,36 @@
+// # Search form in header
+
+.search {
+  position: relative;
+}
+
+.search__input {
+  display: block;
+  border: none;
+  background: $color-gray-lightest;
+  border-radius: 1.25rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  font-family: $font-source;
+  line-height: 2.5rem;
+  width: 100%;
+
+  @media #{$screen-mobile-max} {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.25rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.search__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 3rem;
+  fill: $color-text-light;
+  border: none;
+  outline: none;
+  background: transparent;
+}

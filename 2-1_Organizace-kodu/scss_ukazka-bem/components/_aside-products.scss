@@ -1,0 +1,46 @@
+// # Product list in sidebar
+.aside-products {
+  display: none;
+  
+  @media #{$screen-md} {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem;
+  }
+}
+
+.aside-products__item {
+  width: 50%;
+  max-width: 50%;
+  flex: 1 1 50%;
+  padding: 0 1rem 1rem 0;
+
+  &:nth-child(even) {
+    padding: 0 0 1rem 1rem;
+  }
+}
+
+.aside-products__link {
+  color: $color-text-light;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.aside-products__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto .75rem;
+}
+
+.aside-products__heading {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: $font-regular; 
+  text-transform: none;
+}

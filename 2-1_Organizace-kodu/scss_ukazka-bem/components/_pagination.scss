@@ -1,0 +1,65 @@
+// # Pagination of news
+
+.pagination {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination__item {
+  margin: 0 .25rem 0 0;
+}
+
+.pagination__item--active {
+  .pagination__link {
+    color: $color-white;
+    background-color: $color-secondary;
+  }
+}
+
+.pagination__item--disabled {
+  .pagination__link {
+    opacity: .4;
+    pointer-events: none;
+  }
+}
+
+.pagination__link {
+  position: relative;
+  display: block;
+  padding: 0 .5rem;
+  height: 1.5rem;
+  line-height: 1.75rem;
+  color: $color-text-light;
+  fill: $color-text-light;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: .25rem;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-secondary;
+    fill: $color-secondary;
+  }
+
+  svg {
+    fill: color-text-light;
+    width: .75rem;
+    height: auto;
+    margin: .25rem 0 0;
+  }
+}
+
+.pagination__link--previous {
+  svg {
+    transform: rotate(90deg);
+  }
+}
+
+.pagination__link--next {
+  svg {
+    transform: rotate(-90deg);
+  }
+}

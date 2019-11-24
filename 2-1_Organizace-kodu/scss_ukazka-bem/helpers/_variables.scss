@@ -1,0 +1,50 @@
+// Colors
+
+// Brand colors
+$color-white: #fff !default;
+$color-black: #000 !default;
+$color-primary: #f62e41 !default;
+$color-primary-hover: #cb1b2b !default;
+$color-secondary: #05328b !default;
+$color-secondary-soft: #eff5fc;
+$color-secondary-light: #f2f7fd !default;
+
+// Grayscale
+$color-gray-dark: #222 !default;
+$color-gray: #3b3737 !default;
+$color-gray-soft: #838383 !default;
+$color-gray-light: #dcdcdc !default;
+$color-gray-lighter: #e7e7e7 !default;
+$color-gray-lightest: #f7f7f7 !default;
+
+// Component colors
+$color-text: $color-gray;
+$color-text-light: $color-gray-soft;
+$color-active: #64b04a;
+$color-active-dark: #4f925c;
+$color-error: red;
+
+// Fonts
+$font-source: 'SourceSansPro', 'Arial', sans-serif !default;
+$font-raleway: 'Raleway', 'Arial', sans-serif !default;
+$font-light: 300 !default;
+$font-regular: 400 !default;
+$font-semibold: 500 !default;
+$font-bold: 700 !default;
+
+// BREAKPOINTS
+$screen-xxs: "only screen and (min-width: 380px)" !default;
+$screen-xxs-max: "only screen and (max-width: 479px)" !default;
+$screen-xs: "only screen and (min-width: 480px)" !default;
+$screen-sm: "only screen and (min-width: 768px)" !default;
+$screen-md: "only screen and (min-width: 992px)" !default;
+$screen-lg: "only screen and (min-width: 1200px)" !default;
+$screen-xl: "only screen and (min-width: 1450px)" !default;
+
+// mobile nav breakpoint
+$screen-mobile-max: "only screen and (max-width: 991px)" !default;
+
+// Sizes
+$header-height: 70px !default;
+$footer-height: 38px !default;
+$nav-width: 260px !default;

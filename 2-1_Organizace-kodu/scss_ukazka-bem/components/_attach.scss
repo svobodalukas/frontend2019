@@ -1,0 +1,32 @@
+// # List attachments under article
+.attach {
+  list-style-type: none;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+
+.attach__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem;
+  color: $color-secondary;
+  fill: $color-secondary;
+
+  &:hover {
+    .attach__description {
+      text-decoration: none;
+    }
+  }
+}
+
+.attach__ico {
+  margin: 0 1rem 0 0;
+  width: 1.75rem;
+  min-width: 1.75rem;
+}
+
+.attach__description {
+  text-decoration: underline;
+  padding: .125rem 0 0;
+}

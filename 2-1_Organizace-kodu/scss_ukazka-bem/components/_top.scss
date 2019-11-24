@@ -1,0 +1,62 @@
+.top {
+  position: relative;
+  height: 180px;
+  background: url(../images/head-bg-480.jpg) no-repeat center top;
+  background-size: cover; 
+
+  @media #{$screen-xs} {
+    height: 260px;
+    background-image: url(../images/head-bg-992.jpg);
+  }
+  @media #{$screen-md} {
+    height: 350px;
+    background-image: url(../images/head-bg-1450.jpg);
+  }
+  @media #{$screen-xl} {
+    background-image: url(../images/head-bg-2200.jpg);
+  }
+}
+
+.top--homepage {
+  padding: 0 0 51.25%;
+  background-position: center center;
+  height: auto;
+
+  @media #{$screen-xs} {
+    padding: 0 0 36.45%;
+  }
+  @media #{$screen-md} {
+    //padding: 0 0 30%;
+  }
+  @media #{$screen-xl} {
+    //padding: 0 0 25%;
+  }
+}
+
+.top__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.top__logo {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+  width: 5rem;
+  height: auto;
+
+  @media #{$screen-xs} {
+    width: 6rem;
+  }
+  @media #{$screen-md} {
+    top: 45%;
+    width: 8rem;
+  }
+  @media #{$screen-xl} {
+    width: 11.75rem;
+  }
+}

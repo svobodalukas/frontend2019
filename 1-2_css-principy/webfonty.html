@@ -1,0 +1,15 @@
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+2) @import (načte se až po loadu celého dokumentu)
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+</style>
+
+3) @font-face (vlastní font nebo dohledat google url) - jedině zde lze vybrat formát
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/lora.woff2') format('woff2'), url('../fonts/lora.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,0 +1,85 @@
+// # Utility classes
+
+// Only for screen readers
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Text helpers
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Images
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+// Display
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+// Position
+.relative {
+  position: relative;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+// Color
+.color-primary {
+  color: $color-primary;
+}
+
+.color-active {
+  color: $color-active;
+}
+
+.color-text-light {
+  color: $color-text-light;
+}
+
+
+// Font weight
+.font-bold {
+  font-weight: $font-bold;
+}
+
+
+// Phone link
+.link_phone {
+  color: $color-text !important;
+  text-decoration: none !important;
+  font-weight: $font-regular;  
+}

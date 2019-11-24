@@ -1,0 +1,48 @@
+// # Footer component
+
+.footer {
+  background-color: $color-white;
+}
+
+// Bottom part
+.footer-bottom {
+  text-align: center;
+
+  > .container {
+    padding: 1.5rem 0 1.25rem;
+
+    @media #{$screen-sm} {
+      padding: 2rem 0 1.75rem;
+      display: flex;
+    }
+    @media #{$screen-xl} {
+      padding: 4rem 0 3.5rem;
+    }
+  }
+}
+
+// Copyright text
+.footer__copy {
+  text-align: center;
+  color: $color-text-light;
+
+  @media #{$screen-sm} {
+    flex: 1 1 26%;
+    align-self: center;
+    order: 2;
+  }
+}
+
+// Link to Academy on the bottom of the page
+.footer__link-academy {
+  display: inline-block;
+  background: $color-active;
+  color: $color-white; 
+  padding: 1.125rem 1.5rem .875rem;
+  border-radius: .75rem .75rem 0 0;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-active-dark;
+  }
+}

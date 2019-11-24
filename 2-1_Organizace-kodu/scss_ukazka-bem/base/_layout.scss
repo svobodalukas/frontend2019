@@ -1,0 +1,128 @@
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+
+  @media #{$screen-sm} {
+    font-size: 15px;
+  }
+
+  @media #{$screen-lg} {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: $font-source;
+  font-weight: $font-regular;
+  color: $color-text-light;
+}
+
+// Fixed size when modal is active
+.body--fixed {
+	overflow: hidden;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-raleway;
+  font-weight: $font-light;
+  margin-top: 0;
+  text-transform: uppercase;
+
+  strong {
+    font-weight: $font-bold;
+  }
+}
+
+.container {
+  margin: auto;
+  width: 94%;
+  max-width: 1215px;
+
+  @media #{$screen-xs} {
+    width: 92%;
+  }
+  @media #{$screen-md} {
+    width: 90%;
+  }
+}
+
+.container--print {
+  margin: 0;
+  max-width: 800px;
+  padding: 45px;
+}
+
+.content {
+  //overflow: hidden;
+
+  @media #{$screen-md} {
+    display: flex;
+  }
+}
+
+// Main content
+.main {
+  position: relative;
+  padding: 1.5rem 0;
+
+  @media #{$screen-sm} {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+  } 
+}
+
+// Main content with aside block on the right
+.main--left {
+@media #{$screen-md} {
+    padding: 2rem 3rem 2rem 0;
+    width: 75%;
+  }
+  @media #{$screen-lg} {
+    padding: 4rem 5rem 4rem 0;
+  }
+}
+
+// Main content with aside block on the left
+.main--right {
+  @media #{$screen-md} {
+    padding: 2rem 0 2rem 3rem;
+    width: 75%;
+  }
+  @media #{$screen-lg} {
+    padding: 4rem 0 4rem 5rem;
+  }
+}
+
+// Main content with aside blocks on both sides
+.main--both {
+  @media #{$screen-md} {
+    padding: 2rem 3rem;
+    width: 50%;
+  }
+  @media #{$screen-lg} {
+    padding: 4rem 5rem;
+  }
+}
+
+.main--contact {
+  @media #{$screen-sm} {
+    display: flex;
+  }
+}
+
+
+.main__heading {
+  margin: 0 0 3rem;
+  color: $color-secondary;
+  font-size: 1.625rem;
+}

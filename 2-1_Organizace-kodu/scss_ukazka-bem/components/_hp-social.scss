@@ -1,0 +1,26 @@
+// # Social blocks on homepage - facebook & instagram
+.hp-social {
+  @media #{$screen-sm} {
+    display: flex;
+  }
+}
+
+.hp-social__item {
+  padding: 0 .125rem 1rem;
+  
+  @media #{$screen-sm} {
+    width: 50%;
+    max-width: 50%;
+    flex: 1 1 50%;
+    padding: 0 1rem 1rem 0;
+    position: relative;
+
+    &:nth-child(even) {
+      padding: 0 0 1rem 1rem;
+    }
+
+    iframe {
+      height: 100%;
+    }
+  }
+}

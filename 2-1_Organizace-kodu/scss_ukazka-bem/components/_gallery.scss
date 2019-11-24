@@ -1,0 +1,29 @@
+// # Gallery component
+// Used on producers detail page
+// Styled by https://github.com/sachinchoolur/lightgallery.js
+
+.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__item {
+  display: inline-block;
+  margin: 0 .5rem .5rem 0;
+  width: 8.5rem;
+
+  @media #{$screen-xs} {
+    margin: 0 1.25rem 1.25rem 0;
+  }
+  @media #{$screen-md} {
+    margin: 0 2.25rem  2.25rem 0;
+  }
+}
+
+.gallery__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: .875rem;
+} 

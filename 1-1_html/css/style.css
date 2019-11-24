@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+
+/* -- 1.2 Principy -- */
+
+/* a) kaskáda - pořadí */
+
+
+/* b) kaskáda - specificita */
+
+
+/* c) kaskáda - důležitost */
+
+
+/* dědičnost - inheritance, font x margin */
+
+
+/* selektory > + ~ [data-attr] a[href^="https"] */
+
+
+/* pseudoselektory: https://codepen.io/svobodalukas/pen/EeMRKL  */
+
+
+/* Box model, margin-bottom flow */
+
+
+/* Display, position, visibility */

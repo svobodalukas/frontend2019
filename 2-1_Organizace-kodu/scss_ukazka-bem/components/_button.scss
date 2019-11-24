@@ -1,0 +1,66 @@
+﻿// # Buttons
+
+.btn {
+  border: 1px solid transparent;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.75rem 1.25rem 0.35rem;
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: $font-semibold;
+  border-radius: .5rem;
+  text-decoration: none;
+
+  &:disabled {
+    opacity: .5;
+  }
+}
+ 
+// Color variants
+.btn--primary {
+  background-color: $color-primary;
+  color: $color-white;
+  box-shadow: 0 5px 0 $color-primary-hover;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}
+
+.btn--secondary {
+  background-color: $color-secondary;
+  color: $color-white;
+  box-shadow: 0 5px 0 darken($color-secondary, 2%);
+
+  &:hover {
+    background-color: darken($color-secondary, 2%);
+  }
+}
+
+.btn--gray {
+  background-color: $color-gray-lightest;
+  color: $color-text-light;
+  box-shadow: 0 5px 0 darken($color-gray-lightest, 6%);
+
+  &:hover {
+    background-color: darken($color-gray-lightest, 6%);
+  }
+}
+
+// Size variants
+.btn--xs {
+  font-size: .875rem;
+  padding: 0.625rem 1.25rem 0.30rem;
+}
+
+.btn--md {
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem 0.625rem;
+}
+
+.btn--lg {
+  font-size: 1.25rem;
+  padding: 1.125rem 1.5rem 0.75rem;
+}

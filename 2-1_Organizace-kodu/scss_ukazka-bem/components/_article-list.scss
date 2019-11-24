@@ -1,0 +1,75 @@
+// # List of articles - used on homepage and other pages
+.article-list {
+  margin: 0 0 3rem;
+}
+
+.article-list__item {
+  margin: 0 0 2rem;
+
+  &:nth-child(odd) {
+    .article-list__heading {
+      color: $color-primary;
+    
+      a {
+        color: $color-primary;
+      }
+    }
+    
+    .article-list__time {
+      background-color: $color-primary;
+    }
+    
+    .article-list__content {
+      border-left: 1px solid $color-primary;
+    }
+  }
+}
+
+.article-list__header {
+  display: flex;
+  margin: 0 0 1.125rem;
+}
+
+.article-list__heading {
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: $font-light;
+  margin: 0 1rem 0 0;
+  color: $color-secondary;
+  font-size: 1.625rem;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: $color-secondary;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.article-list__time {
+  align-self: center;
+  padding: .4rem .5rem .125rem;
+  background-color: $color-secondary;
+  color: $color-white;
+  font-weight: $font-semibold;
+  border-radius: .25rem;
+  display: block;
+}
+
+.article-list__content {
+  color: $color-text-light;
+  padding: 0 0 0 2.25rem;
+  border-left: 1px solid $color-secondary;
+
+  a {
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+

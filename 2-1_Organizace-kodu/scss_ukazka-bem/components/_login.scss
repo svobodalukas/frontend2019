@@ -1,0 +1,50 @@
+// # Login form
+// - used on the page for producers
+
+.login__frm {
+  margin: 0 0 2rem;
+
+  @media #{$screen-sm} {
+    display: flex;
+    margin: 0 0 3rem;
+  }
+}
+
+.login__item {
+  display: flex;
+  padding: 0 0 1.25rem;
+  align-items: center;
+  flex: 1;
+
+  @media #{$screen-sm} {
+    padding: 0 1.5rem 0 0;
+  }
+
+  &:last-child {
+    flex: 0 0 auto;
+
+    @media #{$screen-sm} {
+      padding: 0;
+    }
+  }
+}
+
+.login__footer {
+  padding: 0 0 0 2rem;
+  border-left: 1px solid $color-secondary;
+  font-weight: $font-semibold;
+  margin: 0 0 2rem;
+
+  @media #{$screen-md} {
+    padding: 0 0 0 2.25rem;
+  }
+
+  a {
+		color: $color-secondary;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

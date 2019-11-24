@@ -1,0 +1,165 @@
+// # Footer mobile app and mail teasers
+// - top part of footer component
+
+.footer-teasers {
+  background: $color-gray-lightest;
+  padding: 1.5rem 0;
+
+  @media #{$screen-sm} {
+    padding: 2rem 0;
+  }
+  @media #{$screen-xl} {
+    padding: 4rem 0;
+  }
+
+  > .container {
+    text-align: center;
+
+    @media #{$screen-xs} {
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+// -- App and mail teasers in footer
+
+.footer-teaser {
+  display: inline-block;
+  align-self: center;
+  font-size: 1rem;
+  text-decoration: none;
+  color: $color-text-light;
+  line-height: 1.15;
+  position: relative;
+  white-space: nowrap;
+  padding: 0 .5rem 0 3.5rem;
+
+  @media #{$screen-xs} {
+    flex: 0 0 10rem;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media #{$screen-sm} {
+    font-size: 1.25rem;
+    padding: 0 1.5rem 0 5.25rem;
+  }
+}
+
+.footer-teaser--mail {
+  margin: 1rem 0 0 auto;
+
+  @media #{$screen-xs} {
+    width: 100%;
+    flex: 1 1 100%;
+    flex-direction: column;
+  }
+
+  @media #{$screen-sm} {
+    padding: 0 0 0 5.25rem;
+  }
+  @media #{$screen-lg} {
+    margin: 0 0 0 auto;
+    width: auto;
+    flex: 0 0 auto;
+  }
+  @media #{$screen-xl} {
+    text-align: center;
+  }
+
+  .footer-teaser__heading {
+    color: $color-secondary;
+    font-size: 1.5rem;
+
+    @media #{$screen-xl} {
+      font-size: 2.25rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-teaser__heading {
+  font-weight: $font-bold;
+  color: $color-primary;
+  width: 100%;
+  display: block;
+}
+
+.footer-teaser__icon {
+  width: 3rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  @media #{$screen-sm} {
+    width: 4.25rem;
+  }
+}
+
+.footer-teaser__btn {
+  width: 8rem;
+  display: inline-block;
+  margin: .5rem 0 0;
+  vertical-align: middle;
+
+  @media #{$screen-sm} {
+    flex: 0 0 12rem;
+    max-width: 12rem;
+    align-self: center;
+    vertical-align: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.footer-apps {
+  @media #{$screen-xs} {
+    display: flex;
+    align-self: center;
+    margin: -.5rem 0 0;
+  }
+}
+
+.footer-teaser__btn--app {
+  position: relative;
+  margin: .5rem 0 0 0;
+  height: 28px;
+
+  @media #{$screen-xs} {
+    margin: 1rem -1rem 0 0;
+  }
+
+  @media #{$screen-sm} {
+    flex: 0 0 10.4rem;
+    max-width: 10.4rem;
+    height: 48px;
+    margin: 0;
+    vertical-align: inherit;
+  }
+  @media #{$screen-md} {
+    margin: .625rem 0 0 0;
+  }
+}
+
+.footer-teaser__btn--play { 
+  margin: 1rem 0 0 0;
+
+  @media #{$screen-xs} {
+   margin: .5rem 0 0 0;
+  }
+
+  @media #{$screen-md} {
+    margin: 1rem 0 0 0;
+  }
+}

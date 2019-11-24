@@ -1,0 +1,59 @@
+// # Form controls
+
+.frm-label {
+  font-weight: $font-semibold;
+  color: $color-text-light;
+  margin: 0 0 .125rem 1.5rem;
+  display: block;
+
+  @media #{$screen-xs} {
+    text-align: center;
+    margin: 0 0 .25rem;
+  }
+}
+
+.frm-label--icon {
+  margin: 0 .875rem 0 0;
+  fill: $color-secondary;
+}
+
+.frm-select__wrap {
+  padding: 0;
+  background: $color-white url('../images/ico-rozbal.svg') no-repeat
+    92% 50%;
+  background-size: 0.875rem 0.875rem;
+  border: 1px solid $color-gray-lighter;
+  border-radius: 1.3rem;
+  height: 2.6rem;
+  align-self: center;
+}
+
+.frm-select {
+  border: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  padding: 0.25rem 2.5rem 0 1.5rem;
+  height: 2.6rem;
+  font-weight: $font-regular;
+  width: 100%;
+}
+select.frm-select::-ms-expand {
+  display: none;
+}
+
+.frm-control {
+  padding: 0.25rem 2.5rem 0 1.5rem;
+  border: 1px solid $color-gray-lighter;
+  border-radius: 1.3rem;
+  height: 2.6rem;
+  background: $color-white;
+  width: 100%;
+}
+
+.frm-control--grey {
+  background: $color-gray-lightest;
+  border-color: $color-gray-lightest;
+}

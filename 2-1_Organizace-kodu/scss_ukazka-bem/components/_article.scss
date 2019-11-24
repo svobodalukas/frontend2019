@@ -1,0 +1,297 @@
+// # Article detail
+
+.article__header {
+  position: relative;
+
+  @media #{$screen-xs} {
+    margin: 0;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: .5rem;
+    right: 0;
+
+    @media #{$screen-xs} {
+      bottom: auto;
+      top: 3rem;
+    }
+  }
+}
+
+.article__heading {
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: $font-light;
+  margin: 0 0 2rem 0;
+  color: $color-secondary;
+  font-size: 1.625rem;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.article__heading--main {
+  @media #{$screen-xs} {
+    padding: 0 7.5rem 2rem 0;
+  }
+}
+
+.article__heading--primary {
+  color: $color-primary;
+}
+
+.article__heading--sm {
+  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
+
+  @media #{$screen-md} {
+    margin: 0 0 2rem 0;
+  }
+}
+
+.article__query {
+  text-transform: none;
+  font-weight: $font-semibold;
+  color: $color-text;
+}
+
+.article__time {
+  color: $color-white;
+  background: $color-secondary;
+  font-family: $font-source;
+  padding: 0 1rem;
+  margin: 0 0 1rem;
+  white-space: nowrap;
+  height: 2.4rem;
+  line-height: 2.7rem;
+  border-radius: 1.2rem 0 0 1.2rem;
+  font-size: 1rem;
+
+  @media #{$screen-xs} {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.article__perex {
+  padding: 0 0 0 2.25rem;
+  border-left: 1px solid $color-secondary;
+  font-weight: $font-semibold;
+  color: $color-secondary;
+  margin: 0 0 2rem;
+
+  @media #{$screen-md} {
+    margin: 0 0 3rem;
+  }
+
+  a {
+		color: $color-secondary;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.article__content {
+  font-size: 1rem;
+  color: $color-text-light;
+  overflow: hidden;
+  margin: 0 0 2rem;
+
+	h2,
+  h3,
+  h4 {
+    text-transform: none;
+    font-family: $font-source;
+    font-weight: $font-bold;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+    margin: 0 0 2rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    margin: 0 0 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin: 0 0 1.25rem;
+  }
+
+	p,
+	ul,
+	ol,
+	dl {
+		margin: 0 0 1.875rem;
+  }
+  
+  table {
+    width: 100%;
+  }
+
+	a:not(.btn) {
+		color: $color-secondary;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto 2rem;
+		display: block;
+	}
+
+	ol,
+	ul:not(.article-gallery):not(.attach) {
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			position: relative;
+			display: block;
+			padding: 0 0 .5rem 1.125rem;
+			margin: 0;
+
+			&:before {
+				position: absolute;
+	   			top: 0;
+	   			left: 0;
+			}
+		}
+	}
+
+	ul:not(.article-gallery):not(.attach) {
+		li {
+	   		&:before {
+			   content: "";
+			   width: .3rem;
+				 height: .3rem;
+				 border-radius: 50%;
+			   top: .5rem;
+			   left: .25rem;
+			   background-color: $color-secondary;
+			}
+		}
+	}
+
+	ol {
+		li {
+	   		counter-increment: item;
+
+	   		&:before {
+				 content: counter(item)'. ';
+				 color: $color-secondary;
+				 font-weight: $font-bold;
+			}
+		}
+  }
+  
+  .btn--back {
+    float: right;
+    margin: 0 0 1rem 1rem;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid $color-gray-lighter;
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+
+  table {
+    margin: 0 0 2rem;
+    border: 0;
+  
+    tr { 
+      &:hover {
+        cursor: pointer;
+  
+        td {
+          background: $color-secondary-soft;
+          border-left-color: transparent;
+        }
+      }
+    }
+  
+    th,
+    td {
+      padding: 1rem .75rem;
+      border-left: 1px solid $color-gray-lighter;
+      //width: auto !important;
+      vertical-align: middle;
+
+      p {
+        margin: 0;
+      }
+  
+      &:first-child {
+        border-left: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    // In Wysiwig editor will be first line heading
+    tr {
+      &:first-child {
+        td {
+          border-bottom: 4px solid $color-gray-lighter;
+          border-top: 0;
+          color: $color-secondary;
+          text-transform: uppercase;
+          text-align: left;
+          font-weight: $font-semibold;
+          padding-top: 0;
+        }
+      }
+    }
+  
+    th {
+      border-bottom: 4px solid $color-gray-lighter;
+      color: $color-secondary;
+      text-transform: uppercase;
+      text-align: left;
+      font-weight: $font-semibold;
+      padding-top: 0;
+    }
+  
+    td {
+      border-bottom: 1px solid $color-gray-lighter;
+    }
+  }
+
+}
+
+
+.article__klasa {
+  padding: 0 0 0 2.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-left: 1px solid $color-secondary;
+  font-weight: $font-light;
+  font-style: italic;
+  color: $color-secondary;
+  margin: 0 0 1.5rem; 
+
+  a {
+		color: $color-secondary;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

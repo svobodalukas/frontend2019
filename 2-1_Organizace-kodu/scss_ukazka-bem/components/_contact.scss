@@ -1,0 +1,29 @@
+// # Contact items
+
+.contact__item {
+  padding: 0;
+  text-align: center;
+
+  @media #{$screen-sm} {
+    flex: 1 1 auto;
+    padding: 0 1.5rem;
+  }
+
+  &:first-child {
+    @media #{$screen-sm} {
+      padding: 0 1.5rem 0 0;
+    }
+  }
+
+  &:last-child {
+    @media #{$screen-sm} {
+      padding: 0 0 0 1.5rem;
+    }
+  }
+
+  .article__heading {
+    @media #{$screen-lg} {
+      white-space: nowrap;
+    }
+  }
+}

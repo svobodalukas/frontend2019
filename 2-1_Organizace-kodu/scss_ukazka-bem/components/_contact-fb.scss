@@ -1,0 +1,30 @@
+// # Facebook block in contact
+.contact-fb {
+  background: $color-gray-lightest;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-secondary;
+  font-weight: $font-light;
+  font-size: 1.25rem;
+  font-family: $font-raleway;
+  max-width: 25rem;
+  margin: 0;
+
+  @media #{$screen-sm} {
+    margin: 0 0 0 auto;
+  }
+
+  a {
+    color: $color-secondary;
+
+    &:hover {
+			text-decoration: none;
+		}
+  }
+}
+
+.contact-fb__img {
+  display: inline-block;
+  margin: 0 0 0 .5rem;
+}
