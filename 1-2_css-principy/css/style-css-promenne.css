@@ -1,0 +1,9 @@
+/* -- 1.2 Principy - CSS proměnné -- */
+
+html {
+  --color-blue: blue;
+}
+
+h1 {
+  color: var(--color-blue);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend / Obrázky</title>
+    <meta name="description" content="Frontend 2019" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-obrazky.css" />
+  </head>
+
+  <body>
+    <h1>Obrázky</h1>
+    <h2>Srcset, sizes</h2>
+    <img
+      src="http://placehold.it/1650x330/5a5a5a"
+      srcset="
+        //placehold.it/640x550/0b600b   640w,
+        //placehold.it/992x450/b42c25   992w,
+        //placehold.it/1650x330/5a5a5a 1650w
+      "
+      sizes="100vw"
+      alt="titulek obrazku"
+      class="img-fluid"
+    />
+
+    <h2>Picture</h2>
+    <picture>
+      <source
+        srcset="//placehold.it/640x550/0b600b"
+        media="(max-width: 640px)"
+      />
+      <source
+        srcset="//placehold.it/992x450/b42c25"
+        media="(max-width: 992px)"
+      />
+      <source srcset="assets/image-640.webp" type="image/webp" />
+      <img
+        src="http://placehold.it/1650x330/5a5a5a"
+        alt="titulek obrazku"
+        class="img-fluid"
+      />
+    </picture>
+  </body>
+</html>

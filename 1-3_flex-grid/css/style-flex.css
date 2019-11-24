@@ -1,0 +1,86 @@
+/* -- 1.2 Principy - calc -- */
+
+h1 {
+  margin: 0;
+}
+
+.box {
+  height: 5rem;
+}
+
+.row {
+  display: flex;
+  border: 2px dashed red;
+  position: relative;
+  margin: 0 0 3rem;
+}
+
+.row--grow .box {
+  flex-grow: 1;
+}
+.row--grow .box:nth-child(2) {
+  flex-grow: 1;
+}
+
+.row--shrink {
+  max-width: 1200px;
+}
+
+.row--shrink .box {
+  flex-shrink: 1;
+  flex-basis: 1200px;
+}
+
+.row--basis {
+  flex-wrap: wrap;
+}
+
+.row--basis .box {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.row--direction {
+  flex-direction: column-reverse;
+}
+
+.row--wrap {
+  flex-wrap: wrap;
+}
+
+.row--wrap .box {
+  flex-basis: 50%;
+}
+
+.row--order .box:nth-child(3) {
+  order: -1;
+}
+
+.row--align-items {
+  align-items: flex-end;
+  height: 10rem;
+}
+
+.row--align-content {
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 20rem;
+}
+
+.row--align-content .box {
+  flex-basis: 50%;
+}
+
+.row--justify-content {
+  justify-content: space-around;
+  height: 10rem;
+}
+
+.row--self {
+  height: 10rem;
+  align-items: flex-start;
+}
+
+.row--self .box:nth-child(2) {
+  align-self: flex-end;
+}

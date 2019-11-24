@@ -1,0 +1,21 @@
+/* -- 1.2 Principy - z-index -- */
+
+.container {
+  height: 80vh;
+}
+
+.box {
+  position: absolute;
+}
+
+.box-1 {
+  left: 2rem;
+  top: 2rem;
+  z-index: 1;
+}
+
+.box-2 {
+  left: 4rem;
+  top: 4rem;
+  z-index: 1;
+}

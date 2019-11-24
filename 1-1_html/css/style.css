@@ -27,7 +27,10 @@ body {
 /* pseudoselektory: https://codepen.io/svobodalukas/pen/EeMRKL  */
 
 
-/* Box model, margin-bottom flow */
+/* Box model */
+
+
+/* margin-bottom flow, margin-top bug */
 
 
 /* Display, position, visibility */
