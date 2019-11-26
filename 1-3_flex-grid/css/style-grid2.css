@@ -1,0 +1,54 @@
+/* -- 1.3 Flex & grid - grid -- */
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  max-width: 90vw;
+  height: 80vh;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 100px;
+  grid-gap: 1rem;
+  grid-template-areas:
+      "header header header"
+      "sidebar content-1 content-1"
+      "sidebar content-2 content-3"
+      "footer footer footer";
+}
+
+.box {
+  height: auto;
+  width: auto;
+}
+
+.box--header {
+  grid-area: header;
+}
+
+.box--sidebar {
+  grid-area: sidebar;
+}
+
+.box--content-1 {
+  grid-area: content-1;
+}
+
+.box--content-2 {
+  grid-area: content-2;
+}
+
+.box--content-3 {
+  grid-area: content-3;
+}
+
+.box--footer {
+  grid-area: footer;
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
+}
+
+.box-label {
+  font-size: 1.75rem;
+}

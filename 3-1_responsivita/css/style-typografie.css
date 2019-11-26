@@ -1,0 +1,17 @@
+/* -- 3.1 Responsivní typografie -- */
+
+.header {
+  background-color: navy;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+}
+
+.header__title { 
+  font-size: 2rem;
+  font-size: calc( 10 * ((100vw - 6rem) / 100 / 19 * 10 ));
+}
+
+.header__leader { 
+  font-size: calc( 5 * ((100vw - 6rem) / 100 / 19 * 10 ));
+}

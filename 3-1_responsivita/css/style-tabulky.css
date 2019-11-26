@@ -1,0 +1,25 @@
+/* -- 3.1 Responsivní tabulky -- */
+
+.container {
+  padding: 0 2rem 2rem;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d5d5d5;
+}
+
+/* scroll wrapper */
+@media screen and (max-width: 768px) {
+
+}
+
+/* columns to rows - attr(title)": " */
+@media screen and (max-width: 768px) {
+
+}

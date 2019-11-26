@@ -57,6 +57,10 @@
 ## 3. Responsivita a automatizace
 ### Principy responsivity
  - [prezentace responsivita](prezentace/3-1_Responsivita.pdf)
+ - [responsivní obrázky](3-1_responsivita/obrazky.html)
+ - [responsivní video](3-1_responsivita/video-iframe.html)
+ - [responsivní typografie](3-1_responsivita/typografie.html)
+ - [responsivní tabulky](3-1_responsivita/tabulky.html)
 
 ### Preprocesory a automatizace
  - [prezentace SASS](prezentace/3-2_SASS.pdf)
@@ -75,3 +79,5 @@
 
 ### Pravidla přístupného webu
  - [prezentace přístupnost](prezentace/4-2_Pristupnost.pdf)
+ - [chyby v UI](prezentace/4-2_UI-faily)
+ - [Bad UI test](https://userinyerface.com/)
