@@ -64,13 +64,24 @@
 
 ### Preprocesory a automatizace
  - [prezentace SASS](prezentace/3-2_SASS.pdf)
+ - [SCSS prakticky, automatizace - GULP](3-2_preprocesory/gulp-stack/index.html)
+ - [Webpack](3-2_preprocesory/webpack-stack/index.html)
 
 ### Bootstrap
-
-### Další js stacky pro vývoj
- - [AMP](https://amp.dev/)
+ - [Bootstrap web](https://getbootstrap.com/)
+ - [Bootstrap ukázka](3-3_bootstrap/index.html)
+ - [Bootstrap jako npm](3-3_bootstrap/bootstrap-npm/)
 
 ### Trocha javascriptu pro kodéry
+ - [javascript](3-4_javascript/index.html)
+
+### Další js stacky pro vývoj
+ - [Jamstack + Storybook](https://github.com/markoradak/gatsby-starter-storybook)
+ - [Jamstack + Storybook code](3-5_js-stack/gatsby-starter-storybook/)
+ - [Vue starter pack](https://github.com/qraimbault/vue-js-starter-scss)
+ - [Vue starter code](3-5_js-stack/vue-js-starter/)
+ - [AMP web](https://amp.dev/)
+ - [AMP ukázka](3-5_js-stack/amp/index-amp.html)
 
 ## 4. Rychlost načítání a přístupnost
 

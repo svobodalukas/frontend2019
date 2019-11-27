@@ -1,0 +1,24 @@
+/* -- 1.4 SVG -- */
+
+.svg {
+  margin: 0 5rem;
+  fill: none;
+}
+
+.svg-path {
+  stroke-width: 2;
+  stroke: #2867a3;
+  stroke-linecap: round;
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+  animation: dash 3s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 70;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,62 @@
+/* Gulp - SCSS compilation 
+ - sourcemaps
+ - autoprefixer
+ - uglifycss
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 3rem 0 1rem;
+}
+
+h1 {
+  background: #dedede;
+  color: #333;
+  margin: 0 0 2rem;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 2rem;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  border: 2px solid red;
+  position: relative;
+}
+
+.box {
+  background-color: #2867a3;
+  border: 2px solid #113c64;
+  height: 5rem;
+  width: 25rem;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  border: 2px dashed red;
+  position: relative;
+  margin: 0 0 3rem;
+}
+
+.box-label {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
