@@ -7,16 +7,28 @@ body {
 }
 
 /* refaktoring */
-.button-blue-small {
+.button {
   display: inline-block;
   text-align: center;
   margin: 10px 5px;
   text-decoration: none;
+}
+
+.button-small {
+  font-size: 16px;
+  padding: 10px 30px;
+}
+
+.button-blue {
   color: #FFF;
   border: 1px solid #0082BE;
   background: #00A4EF;
-  font-size: 16px;
-  padding: 10px 30px;
+}
+
+.button-red {
+  color: #FFF;
+  border: 1px solid rgb(197, 14, 45);
+  background: rgb(197, 14, 45);
 }
 
 /* refaktoring dle OOCSS */

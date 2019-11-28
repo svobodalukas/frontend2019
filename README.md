@@ -33,8 +33,8 @@
 
 ### SVG
  - [prezentace SVG](prezentace/1-4_SVG.pdf)
- - [webfonty](1-4_svg/svg.html)
- - [webfonty](1-4_svg/svg-animace.html)
+ - [SVG prakticky](1-4_svg/svg.html)
+ - [SVG animace](1-4_svg/svg-animace.html)
 
 ## 2. Organizace CSS & refaktoring
 ### Systémy organizace kódu

@@ -5,3 +5,23 @@
 }
 
 /* checkbox */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+ content: "";
+ width: 8rem;
+ height: 8rem;
+ background: url(../assets/check_box_outline.svg) no-repeat center center;
+ background-size: contain;
+ margin: 0 .5rem 0 0;
+ display: inline-block;
+ vertical-align: middle;
+} 
+
+input[type="checkbox"]:checked + label:before {
+  background: url(../assets/check_box.svg) no-repeat center center;
+  background-size: contain;
+} 

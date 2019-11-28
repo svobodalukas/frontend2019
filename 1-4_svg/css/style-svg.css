@@ -2,6 +2,23 @@
 
 
 /* size, fill, stroke */
+.svg {
+  width: 15rem;
+  height: 15rem;
+  fill: red;
+/*   
+  stroke: teal;
+  stroke-width: 20; */
+}
 
+.blue {
+  fill: blue;
+  width: 10rem;
+  height: 10rem;
+}
 
 /* hover, id */
+
+.svg:hover .oko {
+  fill: blue;
+}

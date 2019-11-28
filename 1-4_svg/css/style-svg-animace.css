@@ -15,10 +15,10 @@
 }
 
 @keyframes dash {
-  from {
+  0% {
     stroke-dashoffset: 70;
   }
-  to {
+  100% {
     stroke-dashoffset: 0;
   }
 }

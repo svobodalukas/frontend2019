@@ -3,10 +3,39 @@
 /* a) kaskáda - pořadí */
 
 
+
+
 /* b) kaskáda - specificita */
+
+p {
+  color: green;
+}
+
+p.text-red {
+  color: red;
+}
+
+.ddd .dddd {
+
+}
+
+.nav-link {
+  color: red;
+}
+
+.nav-link.nav-link-blue {
+  color: blue;
+}
+
 
 
 /* c) kaskáda - důležitost */
-
+#text-red #text-red .dddd p {
+  color: red !important;
+}
 
 /* dědičnost - inheritance, font x margin */
+p {
+  color: red;
+  font-size: 2rem;
+}

@@ -1,6 +1,20 @@
 /* -- 1.2 Principy - Webfonty -- */
 
+@font-face {
+  font-family: 'Baskervville';
+  src: url('../fonts/baskervville-regular-webfont.woff2') format('woff2'),
+       url('../fonts/baskervville-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* import font Lora */
+
+/* import font */
+body {
+  font-family: Baskervville, 'Open Sans', Arial, sans-serif;
+}
+
+
+
 
 /* preloading, subsetting */

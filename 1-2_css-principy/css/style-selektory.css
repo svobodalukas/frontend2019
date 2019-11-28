@@ -1,6 +1,9 @@
 /* -- 1.2 Principy - selektory -- */
 
 /* selektory > + ~ [data-attr] a[href^="https"] */
+a[href^="https://app1.ddd"] {
+  color: blue;
+}
 
 
 /* pseudoselektory: https://codepen.io/svobodalukas/pen/EeMRKL  */

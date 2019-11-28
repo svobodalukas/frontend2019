@@ -70,7 +70,7 @@ function Layout({ children }) {
               <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 
                 <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                  <p className="uppercase tracking-loose w-full">Open-Source project</p>
+                  <p className="uppercase tracking-loose w-full text-xl">Open-Source project</p>
                   <h1 className="my-4 text-5xl font-bold leading-tight">GatsbyJS Tailwind Starter</h1>
                   <p className="leading-normal text-2xl mb-8">
                     {data.site.siteMetadata.title} - a simple landing page styled with <a className="text-gray-800 font-bold underline" href="https://tailwindcss.com/">Tailwind CSS</a> 

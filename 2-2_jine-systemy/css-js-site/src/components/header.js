@@ -6,7 +6,7 @@ import styled from "@emotion/styled"
 const HeaderTitle = styled.h1`
   margin: 20px 0;
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
 `;
 
 const Header = ({ siteTitle }) => (

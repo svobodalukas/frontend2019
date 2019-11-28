@@ -14,4 +14,14 @@ h1 {
 .container {
   max-width: 90vw;
   height: 80vh;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 2fr 5fr;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 4fr 4fr;
+  }
 }

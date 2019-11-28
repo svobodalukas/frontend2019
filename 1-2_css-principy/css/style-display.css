@@ -3,6 +3,20 @@
 
 /* Display, visibility */
 
+.box {
+  display: block;
+}
+
+
 /* Position */
 
+.box-2 {
+  position: absolute;
+  border: 10px solid red;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
 
