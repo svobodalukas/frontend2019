@@ -14,11 +14,6 @@ body {
   padding: 0;
 }
 
-h2 {
-  font-size: 2rem;
-  margin: 3rem 0 1rem;
-}
-
 h1 {
   background: #dedede;
   color: #333;
@@ -60,3 +55,9 @@ h1 {
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
+
+// barvy - darken/lighten
+
+// media queries #{..}
+$screen-sm: 'only screen and (min-width: 1024px)';
+
