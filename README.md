@@ -86,6 +86,7 @@
 
 ### Rychlost načítání
  - [prezentace rychlost načítání](prezentace/4-1_Rychlost-nacitani.pdf)
+ - [lazyloading prakticky](4-1_lazy-loading/index.html)
 
 ### Pravidla přístupného webu
  - [prezentace přístupnost](prezentace/4-2_Pristupnost.pdf)

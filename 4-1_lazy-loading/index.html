@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend / Empty project</title>
+    <meta name="description" content="Frontend 2019" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Hlavicka a Hlavni menu -->
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kadeřnictví Scissors</a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#kadernice">Kadeřnice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sluzby">Služby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#foto">Fotogalerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Obrazek -->
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="http://www.lukassvoboda.cz/assets/carousel1.jpg"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="http://www.lukassvoboda.cz/assets/carousel2.jpg"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="http://www.lukassvoboda.cz/assets/carousel3.jpg"
+            alt="Third slide"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Akce, novinky -->
+    <div class="akce py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>Akce -30&nbsp;%</h2>
+          </div>
+          <div class="col-sm-8">
+            <p>
+              Květen je měsíc vlasů. Přijď ho s námi oslavit a
+              <strong>získej slevu 30&nbsp;%</strong> na všechny naše služby.
+              Ohrom své přátele novým účesem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kadernice -->
+    <div id="kadernice" class="kadernice text-center sekce sekce-seda">
+      <div class="container">
+        <h2>Naše kadeřnice</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <img
+              src="http://www.lukassvoboda.cz/assets/kadernice-helena.jpg"
+              alt="Helena Králíková"
+              class="img-fluid rounded-circle"
+            />
+            <h3>Helena Králíková</h3>
+            <p>
+              Kadeřnice s více než patnáctiletou praxí, jedna ze zakladatelek
+              české kadeřnické akademie. Specialistka na exotické účesy pro
+              zvláštní příležitosti.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <img
+              src="http://www.lukassvoboda.cz/assets/kadernice-eliska.jpg"
+              alt="Eliška Dvořáková"
+              class="img-fluid rounded-circle"
+            />
+            <h3>Eliška Dvořáková</h3>
+            <p>
+              Držitelka několika národních i mezinárodních ocenění, mimo jiné i
+              Kadeřnice roku a Účes roku. Spolupracuje s předními českými i
+              světovými kadeřníky.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <img
+              src="http://www.lukassvoboda.cz/assets/kadernice-jarmila.jpg"
+              alt="Jarmila Prokopová"
+              class="img-fluid rounded-circle"
+            />
+            <h3>Jarmila Prokopová</h3>
+            <p>
+              Specialistka na pánské a dětské střihy se zkušenostmi s česáním
+              módních přehlídek a vlasových show. Certifikovaná odbornice na
+              modeláž nehtů.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- konec #kadernice -->
+
+    <!-- Sluzby -->
+    <div id="sluzby" class="sekce">
+      <div class="container">
+        <h2>Služby</h2>
+        <div class="row">
+          <div class="col-sm-6 col-md-7">
+            <div class="media">
+              <img
+                src="http://www.lukassvoboda.cz/assets/sluzby-damske.svg"
+                width="100"
+                height="100"
+                alt="Dámské kadeřnictví"
+                class="mr-3 d-none d-sm-block"
+              />
+              <div class="media-body">
+                <h3>Dámské kadeřnictví</h3>
+                <p>
+                  Moderní střihy, barvení vlasů, melírování, přelivy, svatební
+                  účesy, večerní účesy, preparace vlasů, trvalé, prodlužování a
+                  zhuštění vlasů, prodej připínacích pramenů, poradenství a
+                  prodej vlasové kosmetiky.
+                </p>
+              </div>
+            </div>
+            <div class="media">
+              <img
+                src="http://www.lukassvoboda.cz/assets/sluzby-panske.svg"
+                width="100"
+                height="100"
+                alt="Pánské kadeřnictví"
+                class="mr-3 d-none d-sm-block"
+              />
+              <div class="media-body">
+                <h3>Pánské kadeřnictví</h3>
+                <p>
+                  Střihy, zastřižení, střih strojkem, melírování, barvení vlasů,
+                  tonování šedivých vlasů, tvarování gelem, zastřižení vousů a
+                  knírů, masáž hlavy, poradenství, prodej vlasové pánské
+                  kosmetiky.
+                </p>
+              </div>
+            </div>
+            <div class="media">
+              <img
+                src="http://www.lukassvoboda.cz/assets/sluzby-kosmetika.svg"
+                width="100"
+                height="100"
+                alt="Kosmetika"
+                class="mr-3 d-none d-sm-block"
+              />
+              <div class="media-body">
+                <h3>Kosmetika a péče o pleť</h3>
+                <p>
+                  Ošetření pleti, masáže obličeje, úprava a barvení řas a obočí,
+                  líčení pro všechny příležitosti, depilace, manikůra,
+                  poradenství a prodej kosmetiky na domácí péči.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-5">
+            <h3>Ceník</h3>
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td>Dámské stříhání</td>
+                  <td>500&ndash;600&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Pánské stříhání</td>
+                  <td>200&ndash;300&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Stříhání strojkem</td>
+                  <td>80&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Stylování účesu</td>
+                  <td>dle náročnosti</td>
+                </tr>
+                <tr>
+                  <td>Barvení, melírování</td>
+                  <td>350&ndash;500&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Líčení</td>
+                  <td>250&nbsp;Kč</td>
+                </tr>
+                <tr>
+                  <td>Modeláž nehtů</td>
+                  <td>350&nbsp;Kč</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- konec #sluzby -->
+
+    <!-- Fotogalerie -->
+    <div id="foto" class="sekce fotogalerie">
+      <h2>Fotogalerie</h2>
+
+      <div class="row no-gutters">
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto01.jpg"
+            alt="Foto 01"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto02.jpg"
+            alt="Foto 02"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto03.jpg"
+            alt="Foto 03"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto04.jpg"
+            alt="Foto 04"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto05.jpg"
+            alt="Foto 05"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto06.jpg"
+            alt="Foto 06"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto07.jpg"
+            alt="Foto 07"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto08.jpg"
+            alt="Foto 08"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto09.jpg"
+            alt="Foto 09"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto10.jpg"
+            alt="Foto 10"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto11.jpg"
+            alt="Foto 11"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-4 col-sm-3 col-md-2">
+          <img
+            src="http://www.lukassvoboda.cz/assets/foto12.jpg"
+            alt="Foto 12"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- konec #fotogalerie -->
+
+    <!-- Kontakt -->
+    <div id="kontakt" class="sekce sekce-seda">
+      <div class="container">
+        <h2>Kontakt</h2>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <h3>Otevírací doba</h3>
+
+            <table class="table table-bordered oteviraci-doba">
+              <tbody>
+                <tr>
+                  <td>Pondělí&ndash;čtvrtek</td>
+                  <td>7.00&ndash;18.00</td>
+                </tr>
+                <tr>
+                  <td>Pátek</td>
+                  <td>10.00&ndash;19.00</td>
+                </tr>
+                <tr>
+                  <td>Sobota</td>
+                  <td>10.00&ndash;15.00</td>
+                </tr>
+                <tr>
+                  <td>Neděle</td>
+                  <td>zavřeno</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <h3>Kadeřnictví Scissors</h3>
+            <p>
+              Pouliční třída 13/2047<br />
+              Praha 1, 101 00
+            </p>
+            <p><a href="mailto:ahoj@scissors.cz">ahoj@scissors.cz</a></p>
+            <p>Telefonické objednávky:<br />+420 123 456 789</p>
+          </div>
+
+          <div class="col-md-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20480.33164028703!2d14.39369546845803!3d50.08551071335367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x75209738d1d3b126!2sCharles+Bridge!5e0!3m2!1sen!2scz!4v1464236145887"
+              width="100%"
+              height="300"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- konec #kontakt -->
+
+    <!-- Paticka -->
+    <div class="sekce">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <p>&copy;2017 Scissors</p>
+          </div>
+          <div class="col-4">
+            <ul class="list-inline text-right">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/czechitas">Facebook</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/czechitas">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
