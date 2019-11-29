@@ -8,45 +8,6 @@ body {
   padding: 0;
 }
 
-h1 {
-  background: #dedede;
-  color: #333;
-  margin: 0 0 2rem;
-  height: 4rem;
-  line-height: 4rem;
-  padding: 0 2rem;
-}
-
-.container {
-  margin: auto;
-  max-width: 1200px;
-  border: 2px solid red;
-  position: relative;
-}
-
-.box {
-  background-color: #2867a3;
-  border: 2px solid #113c64;
-  height: 15rem;
-  width: 25rem;
-  position: relative;
-}
-
-.box-label {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-
-.footer {
-  background: #444;
-  color: #fff;
-  height: 2rem;
-  line-height: 2rem;
-  padding: 0 2rem;
+.bg-dark {
+  background-color: green !important;
 }
