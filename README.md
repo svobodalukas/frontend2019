@@ -82,6 +82,10 @@
  - [AMP web](https://amp.dev/)
  - [AMP ukázka](3-5_js-stack/amp/index-amp.html)
 
+### PHP stack - Nette, Latté
+ - [Nette starter projekt](3-6_php-nette/)
+ - [Nette dokumentace](https://doc.nette.org/cs/3.0/quickstart/getting-started)
+
 ## 4. Rychlost načítání a přístupnost
 
 ### Rychlost načítání
