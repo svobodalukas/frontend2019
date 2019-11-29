@@ -9,3 +9,14 @@
   max-width: 100%;
   height: auto;
 }
+
+.box {
+  background: url(//placehold.it/640x550/0b600b);
+}
+
+@media only screen and (min-width: 800px) {
+  .box {
+    background: url(//placehold.it/992x450/0b600b);
+    background-size: cover;
+  }
+}

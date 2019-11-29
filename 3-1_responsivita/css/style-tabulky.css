@@ -16,10 +16,36 @@
 
 /* scroll wrapper */
 @media screen and (max-width: 768px) {
+  .table-wrap {
+    overflow: auto;
+    max-width: 100%;
+  }
 
+  .table-wrap .table {
+    width: 800px;
+  }
 }
 
 /* columns to rows - attr(title)": " */
 @media screen and (max-width: 768px) {
+  .table-cols th  {
+    display: none;
+  }
 
+  .table-cols tr  {
+    display: block;
+    border-bottom: 1px solid grey;
+  }
+
+  .table-cols td  {
+    display: block;
+    border: 0;
+  }
+
+  .table-cols td:before  {
+    content: attr(title)":";
+    display: inline-block;
+    padding-right: 0.5rem;
+    font-weight: bold;
+  }
 }
