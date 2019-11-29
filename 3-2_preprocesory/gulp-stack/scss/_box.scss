@@ -1,0 +1,20 @@
+
+.box {
+  background-color: #2867a3;
+  border: 2px solid #113c64;
+  height: 5rem;
+  width: 25rem;
+  position: relative;
+}
+
+
+.box-label {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
